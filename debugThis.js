@@ -1,3 +1,5 @@
+let data = document.querySelector('.answer');
+
 const sumAllFibonacciOdds = function (num) {
   let result = 0;
   let fibonacci = [0,1];
@@ -11,3 +13,7 @@ const sumAllFibonacciOdds = function (num) {
   }
   return result;
 }
+
+let testAnswer = sumAllFibonacciOdds(10);
+
+data.appendChild(testAnswer);
